@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users List</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="font-merriWeather">
+    <header class="mx-auto px-6 py-12 lg:max-w-[74rem] lg:py-14">
+      <h2 class="mb-5 text-2xl font-bold lg:text-3xl">Users</h2>
+      <nav class="flex flex-col lg:flex-row lg:items-center">
+        <!-- search users -->
+        <div class="mb-5 flex rounded-md border p-4 lg:mb-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="mr-3 h-6 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+            />
+          </svg>
+          <input
+            type="text"
+            class="placeholder:text-gray-400 focus:outline-none"
+            placeholder="Search Users"
+          />
+        </div>
+        <!-- navigation -->
+        <div class="flex flex-col lg:ml-auto lg:flex-row lg:space-x-4">
+          <a
+            href="#"
+            class="inline-block rounded-md px-4 py-4 text-sm active:bg-[#87A0CE] active:text-white"
+            >Reputation</a
+          >
+          <a
+            href="#"
+            class="inline-block rounded-md bg-[#87A0CE] px-4 py-4 text-sm text-white active:bg-[#87A0CE] active:text-white"
+            >New Reputation</a
+          >
+          <a
+            href="#"
+            class="inline-block rounded-md px-4 py-4 text-sm active:bg-[#87A0CE] active:text-white"
+            >Voters</a
+          >
+          <a
+            href="#"
+            class="inline-block rounded-md px-4 py-4 text-sm active:bg-[#87A0CE] active:text-white"
+            >Editors</a
+          >
+          <a
+            href="#"
+            class="inline-block rounded-md px-4 py-4 text-sm active:bg-[#87A0CE] active:text-white"
+            >Moderators</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="mx-auto mb-20 px-6 lg:max-w-[74rem]">
+      <!-- users box -->
+      <div class="flex flex-wrap justify-center gap-2 md:justify-start">
+        <!-- user 1 -->
+        <div
+          class="flex max-w-sm flex-row rounded-2xl border border-white bg-gray-50 px-6 py-8 transition duration-300 hover:border-[#87A0CE] hover:shadow-lg"
+        >
+          <div>
+            <img
+              src="../img/users1.jpg"
+              alt="user1"
+              class="h-[130px] w-[130px] rounded-full bg-cover bg-center"
+            />
+          </div>
+          <div class="ml-7 flex flex-col pt-6">
+            <h3 class="text-lg font-bold">Lelah Nichols</h3>
+            <p class="text-sm">Troy, MI</p>
+            <div
+              class="mt-4 flex w-40 flex-wrap gap-2 text-left text-xs font-bold"
+            >
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                clothes
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                stem
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- user 2 -->
+        <div
+          class="flex max-w-sm flex-row rounded-2xl border border-white bg-gray-50 px-6 py-8 transition duration-300 hover:border-[#87A0CE] hover:shadow-lg"
+        >
+          <div>
+            <img
+              src="../img/users2.jpg"
+              alt="user2"
+              class="h-[130px] w-[130px] rounded-full bg-cover bg-center"
+            />
+          </div>
+          <div class="ml-7 flex flex-col pt-6">
+            <h3 class="text-lg font-bold">Jesus Weiss</h3>
+            <p class="text-sm">Fort Worth,TX</p>
+            <div
+              class="mt-4 flex w-40 flex-wrap gap-2 text-left text-xs font-bold"
+            >
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                headshet
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                gadget
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                speed
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                winter
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- user 3 -->
+        <div
+          class="flex max-w-sm flex-row rounded-2xl border border-white bg-gray-50 px-6 py-8 transition duration-300 hover:border-[#87A0CE] hover:shadow-lg"
+        >
+          <div>
+            <img
+              src="../img/users3.jpg"
+              alt="user3"
+              class="h-[130px] w-[130px] rounded-full bg-cover bg-center"
+            />
+          </div>
+          <div class="ml-7 flex flex-col pt-6">
+            <h3 class="text-lg font-bold">Annie Rice</h3>
+            <p class="text-sm">Austin, TX</p>
+            <div
+              class="mt-4 flex w-40 flex-wrap gap-2 text-left text-xs font-bold"
+            >
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                read
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                mountain
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                stem
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                trip
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                earth
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                nature
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- user 4 -->
+        <div
+          class="flex max-w-sm flex-row rounded-2xl border border-white bg-gray-50 px-6 py-8 transition duration-300 hover:border-[#87A0CE] hover:shadow-lg"
+        >
+          <div>
+            <img
+              src="../img/users4.jpg"
+              alt="user4"
+              class="h-[130px] w-[130px] rounded-full bg-cover bg-center"
+            />
+          </div>
+          <div class="ml-7 flex flex-col pt-6">
+            <h3 class="text-lg font-bold">Robert Browner</h3>
+            <p class="text-sm">Cincinnati, OH</p>
+            <div
+              class="mt-4 flex w-40 flex-wrap gap-2 text-left text-xs font-bold"
+            >
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                maintance
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                gears
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                frames
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                repair
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- user 5 -->
+        <div
+          class="flex max-w-sm flex-row rounded-2xl border border-white bg-gray-50 px-6 py-8 transition duration-300 hover:border-[#87A0CE] hover:shadow-lg"
+        >
+          <div>
+            <img
+              src="../img/users5.jpg"
+              alt="user5"
+              class="h-[130px] w-[130px] rounded-full bg-cover bg-center"
+            />
+          </div>
+          <div class="ml-7 flex flex-col pt-6">
+            <h3 class="text-lg font-bold">Amy Campbell</h3>
+            <p class="text-sm">Warlor, AL</p>
+            <div
+              class="mt-4 flex w-40 flex-wrap gap-2 text-left text-xs font-bold"
+            >
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                music
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                disks
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- user 6 -->
+        <div
+          class="flex max-w-sm flex-row rounded-2xl border border-white bg-gray-50 px-6 py-8 transition duration-300 hover:border-[#87A0CE] hover:shadow-lg"
+        >
+          <div>
+            <img
+              src="../img/users6.jpg"
+              alt="user6"
+              class="h-[130px] w-[130px] rounded-full bg-cover bg-center"
+            />
+          </div>
+          <div class="ml-7 flex flex-col pt-6">
+            <h3 class="text-lg font-bold">Anthony S. Morin</h3>
+            <p class="text-sm">Lyndhurst, NJ</p>
+            <div
+              class="mt-4 flex w-40 flex-wrap gap-2 text-left text-xs font-bold"
+            >
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                vintage
+              </div>
+              <div
+                class="rounded-full border bg-white px-2 py-1 text-[#87A0CE]"
+              >
+                electric
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
