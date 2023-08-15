@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment Section</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="bg-body">
+    <main
+      class="mx-auto my-24 max-w-3xl rounded-lg border bg-white px-6 pb-10 pt-4 shadow-xl"
+    >
+      <div class="flex flex-col font-sourceSans3">
+        <h2 class="mb-6 text-2xl font-semibold">Comments</h2>
+        <div class="flex flex-col space-y-12">
+          <!-- comment 1 -->
+          <div class="rounded-lg border border-primary px-6 py-6 shadow-md">
+            <div class="flex flex-col">
+              <!-- image profile -->
+              <div class="flex items-center space-x-3">
+                <div class="h-12 w-12 rounded-full">
+                  <img
+                    src="../img/user1.png"
+                    alt="john doe"
+                    class="h-full w-full rounded-full bg-cover bg-center"
+                  />
+                </div>
+                <h4 class="font-semibold">John Doe</h4>
+              </div>
+              <!-- text -->
+              <p
+                class="my-4 border-b border-gray-300 pb-3 leading-[1.7] text-black"
+              >
+                I just tried this recipe and it was amazing! The instructions
+                were clear and easy to follow, and the end result was delicious.
+                I will definitely be making this again,
+                <br class="hidden md:block" />
+                Thanks for sharing!
+              </p>
+              <!-- settings -->
+              <div class="mt-3 flex justify-between">
+                <div class="flex space-x-4">
+                  <img
+                    src="../img/bold.png"
+                    alt="bold"
+                    class="w-5 cursor-pointer"
+                  />
+                  <img
+                    src="../img/edit.png"
+                    alt="edit"
+                    class="w-5 cursor-pointer"
+                  />
+                  <img
+                    src="../img/file.png"
+                    alt="file"
+                    class="w-5 cursor-pointer"
+                  />
+                </div>
+                <div class="">
+                  <a href="#" class="rounded-lg bg-primary px-5 py-3 text-white"
+                    >Comment</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- comment 2 -->
+          <div class="rounded-lg px-2">
+            <div class="flex flex-col">
+              <!-- image profile -->
+              <div class="flex items-center space-x-3">
+                <div class="h-12 w-12 rounded-full">
+                  <img
+                    src="../img/user2.png"
+                    alt="Jane Doe"
+                    class="h-full w-full rounded-full bg-cover bg-center"
+                  />
+                </div>
+                <h4 class="font-semibold">Jane Doe</h4>
+              </div>
+              <!-- text -->
+              <p class="my-4 leading-[1.7] text-black opacity-60">
+                I really appreciate the insights and perspective shared in this
+                article. It's definitely given me something to think about and
+                has helped me see things from a different angle. Thank you for
+                writing and sharing!
+              </p>
+              <!-- settings -->
+              <div class="flex items-center space-x-3">
+                <div class="cursor-pointer rounded-md bg-secondary px-2 py-2">
+                  <img src="../img/arrow_up.png" alt="arrow_up" class="w-5" />
+                </div>
+                <div class="cursor-pointer rounded-md bg-secondary px-2 py-2">
+                  <img
+                    src="../img/arrow_down.png"
+                    alt="arrow_down"
+                    class="w-5"
+                  />
+                </div>
+                <p class="text-sm text-black opacity-60">5 min ago</p>
+              </div>
+            </div>
+          </div>
+          <!-- load more -->
+          <div class="">
+            <button
+              type="button"
+              class="w-full rounded-lg border-2 bg-secondary px-6 py-2 text-center font-semibold"
+            >
+              Load More
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
