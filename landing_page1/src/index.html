@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="font-ibmsans">
+    <!-- design https://uidesigndaily.com/posts/figma-landing-page-website-articles-day-1436 -->
+    <header class="bg-white shadow-md">
+      <nav class="flex items-center justify-between px-10 py-6">
+        <h2 class="text-lg font-bold uppercase tracking-wider text-primary">
+          Logo
+        </h2>
+        <div class="hidden space-x-12 lg:flex xl:pl-40">
+          <a href="#" class="">Home</a>
+          <a href="#" class="">Article</a>
+          <a href="#" class="">Pricing</a>
+          <a href="#" class="">About</a>
+          <a href="#" class="">Contact</a>
+        </div>
+        <div class="flex space-x-4">
+          <button
+            type="button"
+            class="rounded-lg bg-secondary px-6 py-2 font-semibold"
+          >
+            Log In
+          </button>
+          <button
+            type="button"
+            class="rounded-lg bg-primary px-6 py-2 font-semibold text-white"
+          >
+            Start Free Trial
+          </button>
+        </div>
+        <div class="block lg:hidden">
+          <img
+            src="../img/hamburger.png"
+            alt="hamburger"
+            class="h-10 w-10 cursor-pointer"
+          />
+        </div>
+      </nav>
+    </header>
+    <main class="bg-secondary">
+      <div class="flex flex-col items-center justify-center border py-32">
+        <h2 class="text-center text-5xl font-bold leading-tight text-primary">
+          A modern way to <br />
+          build websites.
+        </h2>
+        <p
+          class="mb-8 mt-4 max-w-sm text-center text-lg font-semibold text-primary md:max-w-lg"
+        >
+          Empower designers to build professional, custom websites in a
+          completely visual canvas with no code.
+        </p>
+        <button
+          type="button"
+          class="rounded-md bg-primary px-8 py-4 text-sm font-normal tracking-wider text-white"
+        >
+          Start free trial
+        </button>
+      </div>
+    </main>
+    <section class="mb-16 bg-white">
+      <!-- top title -->
+      <div class="my-8">
+        <div class="flex items-center justify-center space-x-4">
+          <hr class="w-20 border md:w-44" />
+          <h4 class="text-sm font-semibold text-primary">
+            We share our thoughts on design
+          </h4>
+          <hr class="w-20 border md:w-44" />
+        </div>
+      </div>
+      <!-- cards parent -->
+      <div class="mx-auto max-w-6xl">
+        <!-- cards -->
+        <div class="flex flex-wrap justify-center gap-3 gap-y-6">
+          <!-- card 1 -->
+          <div class="flex cursor-pointer flex-col">
+            <div class="">
+              <img src="../img/img1.png" alt="img1" class="w-56" />
+            </div>
+            <h5
+              class="mb-3 mt-5 max-w-[15rem] text-lg font-bold leading-5 text-primary"
+            >
+              Redesigning my site increased sales by over 400% in one week.
+            </h5>
+            <small class="text-xs font-light">Jul 1, 2020</small>
+          </div>
+          <!-- card 2 -->
+          <div class="flex cursor-pointer flex-col">
+            <div class="">
+              <img src="../img/img2.png" alt="img2" class="w-56" />
+            </div>
+            <h5
+              class="mb-3 mt-5 max-w-[15rem] text-lg font-bold leading-5 text-primary"
+            >
+              Design handoff: What engineers really want to see
+            </h5>
+            <small class="text-xs font-light">Jul 1, 2020</small>
+          </div>
+          <!-- card 3 -->
+          <div class="flex cursor-pointer flex-col">
+            <div class="">
+              <img src="../img/img3.png" alt="img3" class="w-56" />
+            </div>
+            <h5
+              class="mb-3 mt-5 max-w-[15rem] text-lg font-bold leading-5 text-primary"
+            >
+              A comprehensive list of human-computer interactions
+            </h5>
+            <small class="text-xs font-light">Jul 1, 2020</small>
+          </div>
+          <!-- card 4 -->
+          <div class="flex cursor-pointer flex-col">
+            <div class="">
+              <img src="../img/img4.png" alt="img4" class="w-56" />
+            </div>
+            <h5
+              class="mb-3 mt-5 max-w-[15rem] text-lg font-bold leading-5 text-primary"
+            >
+              Why do people hate redesigns?
+            </h5>
+            <small class="text-xs font-light">Jul 1, 2020</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
