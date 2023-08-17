@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer UI</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="bg-[#F1F2FC]">
+    <!-- design :
+    https://uidesigndaily.com/posts/figma-footer-ui-design-dark-theme-day-1429 -->
+    <footer class="mx-auto py-10 md:py-16 lg:max-w-5xl lg:py-44">
+      <div
+        class="flex flex-col rounded bg-primary px-8 py-8 font-IBMPlexSans text-white md:flex-row md:gap-5 lg:rounded-2xl lg:px-24 lg:py-16"
+      >
+        <!-- left footer -->
+        <div
+          class="mb-8 flex w-full flex-wrap gap-10 md:mb-0 md:mr-12 md:flex-nowrap md:justify-between lg:mr-16 lg:flex-row"
+        >
+          <!-- navigation 1 -->
+          <div
+            class="flex w-full max-w-[10rem] flex-col space-y-3 md:w-auto md:max-w-none"
+          >
+            <h3 class="font-merriWeather text-sm uppercase tracking-[0.2em]">
+              info
+            </h3>
+            <a href="#" class="text-xs font-light text-gray-300">Formats</a>
+            <a href="#" class="text-xs font-light text-gray-300">Compression</a>
+            <a href="#" class="text-xs font-light text-gray-300">Pricing</a>
+            <a href="#" class="text-xs font-light text-gray-300">FAQ</a>
+            <a href="#" class="text-xs font-light text-gray-300">Status</a>
+          </div>
+          <!-- navigation 2 -->
+          <div
+            class="flex w-full max-w-[10rem] flex-col space-y-3 md:w-auto md:max-w-none"
+          >
+            <h3 class="font-merriWeather text-sm uppercase tracking-[0.2em]">
+              info
+            </h3>
+            <a href="#" class="text-xs font-light text-gray-300"
+              >Developer API</a
+            >
+            <a href="#" class="text-xs font-light text-gray-300">Tools</a>
+            <a href="#" class="text-xs font-light text-gray-300">Blog</a>
+          </div>
+          <!-- navigation 3 -->
+          <div
+            class="flex w-full max-w-[10rem] flex-col space-y-3 md:w-auto md:max-w-none"
+          >
+            <h3 class="font-merriWeather text-sm uppercase tracking-[0.2em]">
+              Company
+            </h3>
+            <a href="#" class="text-xs font-light text-gray-300"> About Us</a>
+            <a href="#" class="text-xs font-light text-gray-300"
+              >Sustainability</a
+            >
+            <a href="#" class="text-xs font-light text-gray-300"
+              >Terms of Service</a
+            >
+            <a href="#" class="text-xs font-light text-gray-300">Privacy</a>
+          </div>
+        </div>
+        <!-- right footer -->
+        <div class="flex flex-col lg:ml-auto">
+          <div class="flex flex-col lg:pt-4">
+            <h4 class="mb-3 text-xs tracking-wider">
+              Subscribe to our email newsletter
+            </h4>
+            <div class="flex gap-4">
+              <input
+                type="text"
+                id="email"
+                placeholder="Your Email"
+                class="rounded-md border-2 border-gray-600 bg-primary px-4 py-3 text-sm text-white placeholder:text-white focus:outline-none"
+              />
+              <button
+                type="button"
+                class="rounded-md bg-secondary px-4 py-3 text-sm font-bold uppercase tracking-wider text-primary"
+              >
+                Subcribe
+              </button>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h4 class="mb-3 text-sm">Follow Us</h4>
+            <div class="flex space-x-4">
+              <img src="../img/fb.png" alt="fb" class="w-10 cursor-pointer" />
+              <img
+                src="../img/twitter.png"
+                alt="twitter"
+                class="w-10 cursor-pointer"
+              />
+              <img
+                src="../img/instagram.png"
+                alt="instagram"
+                class="w-10 cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
