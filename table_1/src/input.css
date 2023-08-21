@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&family=Merriweather:wght@700&display=swap");
+
+@layer base {
+  [type="checkbox"],
+  [type="radio"] {
+    @apply cursor-pointer rounded border-gray-300 p-3 accent-primary focus:ring-1 focus:ring-primary;
+  }
+}
