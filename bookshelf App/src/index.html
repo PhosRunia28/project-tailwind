@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BooksShelf App</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <header class="bg-indigo-600 py-5 font-MerriWeather font-bold">
+      <h1 class="text-center text-3xl tracking-wider text-white lg:text-4xl">
+        BooksShelf Apps
+      </h1>
+    </header>
+    <main class="mx-auto mb-36 mt-4 max-w-7xl font-poppins">
+      <!-- user input -->
+      <h3
+        class="my-4 text-center font-MerriWeather text-2xl font-bold lg:text-3xl"
+      >
+        Masukkan buku baru
+      </h3>
+      <form
+        class="flex flex-col gap-4 px-8 md:px-36 lg:px-52 xl:px-64"
+        id="inputUser"
+      >
+        <div class="flex flex-col gap-1">
+          <label for="judul">Judul</label>
+          <input
+            type="text"
+            name="judul"
+            id="judul"
+            class="border-2 px-5 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500"
+            placeholder="Masukkan Judul"
+          />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="penulis">Penulis</label>
+          <input
+            type="text"
+            name="penulis"
+            id="penulis"
+            class="border-2 px-5 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500"
+            placeholder="Masukkan Penulis"
+          />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="tahun" class="">Tahun</label>
+          <input
+            type="number"
+            name="tahun"
+            id="tahun"
+            min="0"
+            class="border-2 px-5 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500"
+            placeholder="Masukkan Tahun"
+          />
+        </div>
+        <div class="flex items-center gap-4">
+          <label for="selesai">Selesai Dibaca</label>
+          <input
+            type="checkbox"
+            name="selesai"
+            id="selesai"
+            class="h-5 w-5 cursor-pointer rounded focus:ring-1 focus:ring-indigo-500"
+          />
+        </div>
+        <button
+          type="submit"
+          class="rounded-md bg-indigo-600 px-5 py-3 text-white"
+        >
+          Masukkan buku ke Rak
+        </button>
+      </form>
+      <!-- pencarian (search) -->
+      <div class="mx-auto mt-14 flex flex-col items-center px-8 font-poppins">
+        <div class="flex gap-4">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="rounded px-4 py-2"
+            placeholder="Search"
+            autocomplete="off"
+          />
+          <div
+            id="reset"
+            class="inline-block w-max cursor-pointer rounded-md bg-indigo-600 px-4 py-2 text-center text-white"
+          >
+            Reset All
+          </div>
+        </div>
+      </div>
+      <!-- parent rak buku -->
+      <div class="mt-4 flex w-full flex-col gap-3 lg:flex-row">
+        <!-- rak buku (belum selesai) -->
+        <div class="w-full flex-1 rounded-md border border-black px-8 py-4">
+          <h3 class="mb-4 text-2xl">Belum Selesai</h3>
+          <div class="book mt-5 grid grid-cols-2 gap-5" id="bookNotDone"></div>
+        </div>
+        <!-- rak buku (sudah selesai) -->
+        <div class="w-full flex-1 rounded-md border border-black px-8 py-4">
+          <h3 class="mb-4 text-2xl">Sudah Selesai</h3>
+          <div class="book mt-5 grid grid-cols-2 gap-5" id="bookDone"></div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
