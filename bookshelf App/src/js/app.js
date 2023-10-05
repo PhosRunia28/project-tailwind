@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Books {
   constructor() {
     this._books = Storage.getBooks();
@@ -129,6 +130,10 @@ class Storage {
     localStorage.clear();
   }
 }
+=======
+import Books from "./Book.js";
+import { Book } from "./Book.js";
+>>>>>>> 8b50a2fe26dc931f747f2f39c96e89c034a6c993
 
 class App {
   constructor() {
@@ -189,7 +194,10 @@ class App {
         e.target.closest(".card").remove();
       }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8b50a2fe26dc931f747f2f39c96e89c034a6c993
     // Change Status
     if (e.target.classList.contains("status")) {
       if (confirm("ingin diubah ? ")) {

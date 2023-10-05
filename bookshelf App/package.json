@@ -9,7 +9,11 @@
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css"
   },
   "keywords": [],
+<<<<<<< HEAD
   "author": "Tedy Nugroho",
+=======
+  "author": "",
+>>>>>>> 8b50a2fe26dc931f747f2f39c96e89c034a6c993
   "license": "ISC",
   "devDependencies": {
     "prettier": "^2.8.7",
