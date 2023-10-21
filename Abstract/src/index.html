@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abstract</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div
+        class="z-10 flex items-center justify-between bg-black px-10 py-7 md:px-24 md:py-7"
+      >
+        <div class="flex items-center space-x-2 text-white">
+          <h2
+            class="cursor-pointer border-r-2 pr-2 text-2xl hover:text-white/70"
+          >
+            Abstarct
+          </h2>
+          <a href="#" class="text-2xl hover:underline">Help Center</a>
+        </div>
+        <!-- desktop menu -->
+        <div class="hidden space-x-6 text-white lg:flex">
+          <a href="#" class="rounded-xl border border-white px-8 py-2 text-2xl"
+            >Submit a Request</a
+          >
+          <a
+            href="#"
+            class="rounded-xl bg-blue-500 px-8 py-2 text-2xl transition duration-300 hover:bg-white hover:text-black"
+            >Sign In</a
+          >
+        </div>
+        <!-- nav mobile -->
+        <div class="flex items-center space-x-5 lg:hidden">
+          <!-- search icon -->
+          <svg
+            class="cursor-pointer hover:scale-110"
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            style="fill: rgba(254, 255, 254, 1); transform: scale(110px)"
+          >
+            <path
+              d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
+            ></path>
+          </svg>
+          <!-- hamburger icon -->
+          <div class="hamburger cursor-pointer">
+            <div class="top line"></div>
+            <div class="center line"></div>
+            <div class="bottom line"></div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div
+          class="hide absolute left-0 top-[5.2rem] flex w-full flex-col items-center justify-center border-t border-t-white/60 bg-black py-12 text-white transition duration-300 lg:hidden"
+          id="mobile-menu"
+        >
+          <a
+            href="#"
+            class="border-b-2 border-gray-500 pb-5 text-2xl hover:text-white/60"
+            >Submit a Request</a
+          >
+          <a href="#" class="pt-3 text-2xl hover:text-white/60">Sign in</a>
+        </div>
+      </div>
+    </header>
+    <section id="search">
+      <div
+        class="flex flex-col items-center justify-center space-y-10 bg-gray-300 px-10 py-28 md:px-24"
+      >
+        <h2 class="text-center text-7xl font-medium leading-none">
+          How can we help?
+        </h2>
+        <div class="relative mx-auto w-full max-w-2xl border">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search"
+            id="search"
+            class="w-full rounded-lg border border-black p-4 text-lg placeholder:text-xl placeholder:font-medium placeholder:text-gray-500 hover:border-blue-500 focus:border-blue-500 focus:outline-none"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            class="absolute right-5 top-5"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section id="card">
+      <div
+        class="grid items-center justify-center gap-14 px-10 py-24 md:px-24 lg:grid-cols-2"
+      >
+        <!-- card 1 -->
+        <div class="flex items-center space-x-6">
+          <img src="../img/abstract.png" alt="abstract" class="w-1/3 md:w-20" />
+          <div class="space-y-4">
+            <h3 class="text-2xl font-bold">Using Abstract</h3>
+            <p class="max-w-md text-xl">
+              Abstract lets you manage, version, and document your designs in
+              one place.
+            </p>
+            <a href="#" class="block text-lg font-medium text-blue-500"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="flex items-center space-x-6">
+          <img src="../img/account.png" alt="account" class="w-1/3 md:w-20" />
+          <div class="space-y-4">
+            <h3 class="text-2xl font-bold">Manage your account</h3>
+            <p class="max-w-md text-xl">
+              Configure your account settings, such as your email, profile
+              details, and password.
+            </p>
+            <a href="#" class="block text-lg font-medium text-blue-500"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="flex items-center space-x-6">
+          <img src="../img/manage.png" alt="manage" class="w-1/3 md:w-20" />
+          <div class="space-y-4">
+            <h3 class="text-2xl font-bold">
+              Manage organizations, teams, and projects
+            </h3>
+            <p class="max-w-md text-xl">
+              Use Abstract organizations, teams, and projects to organize your
+              people and your work.
+            </p>
+            <a href="#" class="block text-lg font-medium text-blue-500"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="flex items-center space-x-6">
+          <img src="../img/billing.png" alt="billing" class="w-1/3 md:w-20" />
+          <div class="space-y-4">
+            <h3 class="text-2xl font-bold">Manage billing</h3>
+            <p class="max-w-md text-xl">
+              Change subscriptions and payment details.
+            </p>
+            <a href="#" class="block text-lg font-medium text-blue-500"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="flex items-center space-x-6">
+          <img
+            src="../img/authenticate.png"
+            alt="authenticate"
+            class="w-1/3 md:w-20"
+          />
+          <div class="space-y-4">
+            <h3 class="text-2xl font-bold">Authenticate to Abstract</h3>
+            <p class="max-w-md text-xl">
+              Set up and configure SSO, SCIM, and Just-in-Time provisioning.
+            </p>
+            <a href="#" class="block text-lg font-medium text-blue-500"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="flex items-center space-x-6">
+          <img src="../img/support.png" alt="support" class="w-1/3 md:w-20" />
+          <div class="space-y-4">
+            <h3 class="text-2xl font-bold">Abstract support</h3>
+            <p class="max-w-md text-xl">Get in touch with a human.</p>
+            <a href="#" class="block text-lg font-medium text-blue-500"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div
+        class="flex flex-col space-y-10 bg-black px-10 py-14 text-white md:px-24"
+      >
+        <div
+          class="grid w-full grid-cols-2 justify-between gap-10 md:grid-cols-4"
+        >
+          <!-- footer menu 1 -->
+          <div class="flex flex-col space-y-3">
+            <h4 class="text-lg font-bold lg:text-2xl">Abstarct</h4>
+            <div class="flex flex-col space-y-3">
+              <a href="#" class="hover:underline">Start Trial</a>
+              <a href="#" class="hover:underline">Pricing</a>
+              <a href="#" class="hover:underline">Download</a>
+            </div>
+          </div>
+          <!-- footer menu 2 -->
+          <div class="flex flex-col space-y-3">
+            <h4 class="text-lg font-bold lg:text-2xl">Resources</h4>
+            <div class="flex flex-col space-y-3">
+              <a href="#" class="hover:underline">Blog</a>
+              <a href="#" class="hover:underline">Help Center</a>
+              <a href="#" class="hover:underline">Release Notes</a>
+              <a href="#" class="hover:underline">Status</a>
+            </div>
+          </div>
+          <!-- footer menu 3 -->
+          <div class="flex flex-col space-y-3">
+            <h4 class="text-lg font-bold lg:text-2xl">Community</h4>
+            <div class="flex flex-col space-y-3">
+              <a href="#" class="hover:underline">Twitter</a>
+              <a href="#" class="hover:underline">LinkedIn</a>
+              <a href="#" class="hover:underline">Facebook</a>
+              <a href="#" class="hover:underline">Dribble</a>
+              <a href="#" class="hover:underline">Podcast</a>
+            </div>
+          </div>
+          <!-- footer menu 4 -->
+          <div class="flex flex-col space-y-5">
+            <h4 class="text-lg font-bold lg:text-2xl">Company</h4>
+            <div class="flex flex-col space-y-3">
+              <a href="#" class="hover:underline">About Us</a>
+              <a href="#" class="hover:underline">Careers</a>
+              <a href="#" class="hover:underline">Legal</a>
+            </div>
+            <div>
+              <h5 class="font-bold">Contact us</h5>
+              <a href="#" class="hover:underline">info@abstract.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <p class="max-w-xs text-xl font-medium">
+            © Copyright 2023 Abstract Studio Design, Inc. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

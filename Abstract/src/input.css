@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line {
+  width: 2rem;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  transition: 300ms ease-in-out;
+}
+
+.hamburger.open .top {
+  transform: rotate(43deg);
+  transform-origin: top left;
+}
+.hamburger.open .center {
+  opacity: 0;
+}
+
+.hamburger.open .bottom {
+  transform: rotate(-43deg);
+  transform-origin: bottom left;
+}
+
+.hide {
+  @apply pointer-events-none -translate-y-20 opacity-0;
+}
+.show {
+  @apply pointer-events-auto -translate-y-0 opacity-100;
+}
